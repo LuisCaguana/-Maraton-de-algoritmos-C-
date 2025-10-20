@@ -5,7 +5,8 @@ int main(){
     int mat[f][c];
     for(int i=0;i<f;i++) for(int j=0;j<c;j++) cin >> mat[i][j];
     for(int j=0;j<c;j++){
-        for(int i=0;i<f;i++) cout << mat[i][j] << " ";
-        cout << endl;
+        int suma=0;
+        for(int i=0;i<f;i++) suma += mat[i][j];
+        cout << "Columna " << j+1 << ": " << suma << endl;
     }
 }
